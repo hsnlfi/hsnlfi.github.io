@@ -1,63 +1,52 @@
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
+/* CSS Umum */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
     padding: 0;
+    background-color: #121212; /* Warna latar belakang gelap */
+    color: #ffffff; /* Warna teks putih */
+    display: flex;
+    justify-content: center; /* Memusatkan secara horizontal */
+    align-items: center; /* Memusatkan secara vertikal */
+    min-height: 100vh; /* Mengatur tinggi body ke 100% dari viewport */
+    padding: 10px; /* Sedikit padding agar tidak menempel ke tepi di mobile */
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e; /* Warna latar belakang container */
+    border-radius: 10px; /* Sudut bulat */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Bayangan */
+    max-width: 800px; /* Lebar maksimum untuk desktop */
+    width: 100%; /* Lebar penuh pada layar kecil */
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-section {
-    margin: 20px;
+h1, h2 {
+    margin-bottom: 10px;
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
+    margin-top: 20px;
+    color: #bbbbbb; /* Warna teks footer */
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f9f9f9;
-    color: #333;
-}
+/* Media Query untuk Mobile */
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 0 15px; /* Tambahan padding di body untuk layar kecil */
+    }
 
-.socials a {
-    margin: 5px;
-    text-decoration: none;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 5px;
-    display: inline-block;
-}
-.socials a img {
-    vertical-align: middle;
-    margin-right: 8px;
-}
-.donate a {
-    margin: 10px;
-    text-decoration: none;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 5px;
-}
-.donate a img {
-    vertical-align: middle;
-    margin-right: 8px;
+    .container {
+        padding: 15px; /* Kurangi padding container agar sesuai dengan layar kecil */
+        border-radius: 5px; /* Kurangi radius sudut untuk layar kecil */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Ukuran font lebih kecil di layar mobile */
+    }
+
+    footer p {
+        font-size: 0.9em; /* Sesuaikan ukuran teks di footer */
+    }
 }
